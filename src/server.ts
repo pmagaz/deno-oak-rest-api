@@ -6,7 +6,7 @@ const { PORT } = config();
 const app = new Application();
 
 app.use(router.routes());
-app.use(router.allowedMethods());
+//app.use(router.allowedMethods());
 
 console.log(`Server up on port ${PORT}`);
 
