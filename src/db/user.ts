@@ -1,4 +1,4 @@
-import type { User, Uuid } from "./types.ts";
+import type { User, Uuid } from "../types/user.ts";
 import { v4 } from "https://deno.land/std@0.77.0/uuid/mod.ts";
 
 //Fake Db Queries

@@ -1,6 +1,6 @@
 import { Context, helpers } from "https://deno.land/x/oak/mod.ts";
-import type { User } from "./types.ts";
-import * as db from "./db.ts";
+import type { User } from "../types/user.ts";
+import * as db from "../db/user.ts";
 
 export const findUser = async (ctx: Context) => {
   const { userId } = helpers.getQuery(ctx, { mergeParams: true });

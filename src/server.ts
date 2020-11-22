@@ -1,8 +1,8 @@
 import { config } from "https://deno.land/x/dotenv/mod.ts";
 import { Application } from "https://deno.land/x/oak/mod.ts";
 
-import { router } from "./routes.ts";
-import { logger } from "./middleware.ts";
+import { router } from "./routes/index.ts";
+import { logger } from "./middleware/logger.ts";
 
 const { PORT } = config();
 const app = new Application();
