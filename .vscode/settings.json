@@ -7,4 +7,7 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "denoland.vscode-deno",
   },
+  "deno.import_intellisense_origins": {
+    "https://deno.land": true
+  },
 }
