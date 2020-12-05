@@ -14,8 +14,8 @@ export const findUser = async (ctx: Context) => {
 };
 
 export const createUser = async (ctx: Context) => {
-  const { name, birthDate } = await ctx.request.body().value;
   try {
+    const { name, birthDate } = await ctx.request.body().value;
     let createdUser: User = await db.createUser(name, birthDate);
     ctx.response.body = createdUser;
   } catch (err) {
