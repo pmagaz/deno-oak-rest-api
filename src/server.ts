@@ -9,7 +9,6 @@ const app = new Application();
 
 app.use(logger);
 app.use(router.routes());
-app.use(router.allowedMethods());
 
 console.log(`Server up on port ${PORT}`);
 
